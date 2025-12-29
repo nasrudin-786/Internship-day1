@@ -1,7 +1,7 @@
-//week 2 day 1
+package week1day5;
 import java.util.ArrayList;
 
-public class Mainn {
+public class studentget {
 
     static class Students {
         private int id;

@@ -1,3 +1,5 @@
+package week1day5;
+
 public class course {
     private int id;
     private String name;

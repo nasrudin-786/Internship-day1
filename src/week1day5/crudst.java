@@ -1,15 +1,16 @@
-import java.sql.*;
+package week1day5;
 
-public class Main {
+import java.sql.*;
+public class crudst {
 
     private Connection con;
 
-    public Main(Connection con) {
+    public crudst(Connection con) {
         this.con = con;
     }
 
     public void insertStudent(String name, int age) throws Exception {
-        String query = "INSERT INTO students(name, age) VALUES(?, ?)";
+        String query = "INSERT INTO students(name, age) VALUES('zara',20)";
         PreparedStatement ps = con.prepareStatement(query);
         ps.setString(1, name);
         ps.setInt(2, age);
@@ -33,7 +34,7 @@ public class Main {
     }
 
     public void updateStudent(int id, String newName) throws Exception {
-        String query = "UPDATE students SET name = ? WHERE id = ?";
+        String query = "UPDATE students SET name = 'Nasaroddin' WHERE id = 32";
         PreparedStatement ps = con.prepareStatement(query);
         ps.setString(1, newName);
         ps.setInt(2, id);
@@ -44,7 +45,7 @@ public class Main {
     }
 
     public void deleteStudent(int id) throws Exception {
-        String query = "DELETE FROM students WHERE id = ?";
+        String query = "DELETE FROM students WHERE id = 32";
         PreparedStatement ps = con.prepareStatement(query);
         ps.setInt(1, id);
         int rows = ps.executeUpdate();
@@ -56,12 +57,12 @@ public class Main {
     public static void main(String[] args) {
         try {
             Class.forName("org.postgresql.Driver");
-            String url = "jdbc:postgresql://localhost:5432/internship_dayy1";
+            String url = "jdbc:postgresql://localhost:5432/internship_day1";
             String user = "postgres";
             String password = "nasru 786";
             Connection con = DriverManager.getConnection(url, user, password);
 
-            Main tasks = new Main(con);
+            crudst tasks = new crudst(con);
 
             tasks.insertStudent("Nasroddin", 20);
             tasks.getAllStudents();

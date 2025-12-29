@@ -1,0 +1,15 @@
+Java is an object-oriented programming language.
+It is widely used for developing web and desktop applications.
+Java follows the principle of “write once, run anywhere”.
+It supports features like inheritance and polymorphism.
+Exception handling is an important concept in Java.
+Exceptions help in handling runtime errors.
+Java provides built-in as well as custom exceptions.
+Custom exceptions are created by extending the `Exception` class.
+They allow developers to define their own error messages.
+Try and catch blocks are used to handle exceptions.
+The throw keyword is used to explicitly throw an exception.
+The throws keyword declares exceptions in a method.
+Java programs are easy to understand and maintain.
+It has strong memory management.
+Java is widely used in the software industry.

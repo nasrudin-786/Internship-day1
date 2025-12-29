@@ -1,3 +1,5 @@
+package week1day5;
+
 public class encapsulationexample {
     public static void main(String[] args) {
 

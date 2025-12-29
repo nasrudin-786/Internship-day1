@@ -1,3 +1,5 @@
+package week1day5;
+
 public class inheritanceexample {
     class person{
         String name;

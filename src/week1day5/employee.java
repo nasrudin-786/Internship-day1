@@ -1,4 +1,7 @@
+package week1day5;
+
 public class employee {
+    public static void main(String [] args){ }
     private int id;
     private String ename;
     private int age;
